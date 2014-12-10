@@ -1,0 +1,26 @@
+#stage {
+	width: 500px;
+	height: 250px;
+	position: relative;
+	border: 1px solid black
+}
+
+#stage div {
+  line-height:40px;
+  width:100%;
+  text-align:center;
+  background:#369;
+  color:#fff;
+  font-weight:bold;
+  position:absolute;
+}
+
+#clicker {
+  border: 1px solid black;
+  line-height:40px;
+  width:500px;
+  text-align:center;
+  background:#369;
+  color:#fff;
+  font-weight:bold;
+}

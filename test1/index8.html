@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>day 8</title>
+    <script type="text/javascript" src="jquery-1.4.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('a').click(function () {
+                var os = $('p').css('font-size');
+                var num = parseFloat(os, 10);
+                var px = os.slice(-2);
+
+                if (this.id == 'plus') {
+                    $('p').css('font-size', num * 1.4 + px);
+
+                } else {
+                    $('p').css('font-size', num / 1.4 + px);
+                }
+
+            });
+
+        });
+    </script>
+    
+
+</head>
+<body>
+    <p>
+        ASdasdasdasdasdasdasdasdsdasdasdasdasdasdasdasddfokogoonkghurremfsaldfughufgfgdfgdkspkvmvbirw
+    </p>
+    <a href="#" id="plus">Large</a>
+    <a href="#" id="minus">Small</a>
+</body>
+</html>

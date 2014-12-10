@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="jquery-1.4.4.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            var i = $('#nav li').size();
+            $('a#add').click(function () {
+                $('<li>' + ++i + '</li>').appendTo('#nav');
+            });
+
+            $('a#remove').click(function () {
+                $('li:last').remove();
+                i--;
+            });
+
+        });
+    
+    </script>
+    
+</head>
+<body>
+<ul id="nav">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+<a href="#" id="add">Add list item</a>
+<a href="#" id="remove">Remove list item</a>
+</body>
+</html>

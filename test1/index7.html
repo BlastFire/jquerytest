@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>urok 7</title>
+<script type="text/javascript" src="jquery-1.4.4.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.wrap').hover(function () {
+            $(this).children('.front').stop().animate({ 'top': '300px' }, 700);
+        }, function () {
+            $(this).children('.front').stop().animate({ 'top': '0' }, 400);
+        });
+    });
+
+</script>
+
+<style type="text/css">
+#container 
+{
+    width: 900;
+    text-align: center;
+    margin: auto;
+}
+    
+.wrap 
+{
+    width: 300px;
+    height: 139px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 0 len;
+}    
+    
+img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}     
+</style>
+    
+
+</head>
+<body>
+<div id="container">
+    <div class="wrap">
+        <img src="img/back.jpg" alt="image" />
+        <img src="img/front.jpg" class="front" alt="image" />
+    </div>
+    <div class="wrap">
+        <img src="img/back.jpg" alt="image" />
+        <img src="img/front.jpg" class="front" alt="image" />
+    </div>
+     <div class="wrap">
+        <img src="img/back.jpg" alt="image" />
+        <img src="img/front.jpg" class="front" alt="image" />
+    </div>
+</div>
+</body>
+</html>

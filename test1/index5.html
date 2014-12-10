@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="jquery-1.4.4.js"></script>
+    <link href="css/css5.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(function () {
+            $('a').click(function () {
+                //$('#box').toggle(4000);
+                $('#box').toggleClass('border');
+            });
+
+            $('p').click(function () {
+                $(this).toggleClass('highlight');
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+<div id="box"></div>
+
+<a href="#">ClickMe</a>
+
+<p>This is a paragraph</p>
+<p>This is a paragraph</p>
+<p>This is a paragraph</p>
+<p>This is a paragraph</p>
+</body>
+</html>

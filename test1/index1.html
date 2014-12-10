@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="jquery-1.4.4.js"></script>
+    <style type="text/css">
+        #box
+        {
+            background: red;
+            width: 309px;
+            height: 299px;
+	    display: none;
+        }
+
+	p a 
+	{
+	    color: red;	
+	}
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            $('a').click(function () {
+                $('#box').show(4000);
+		$('p a').css('color', 'blue');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box">
+    </div>
+    <a href="#">ClickMe</a>
+    <p>
+    Damages target unit and life taps <a href="#">him</a>, healing allies that attack the target.
+    Deals 60/100/140/180/220 (+0.6) magic damage to target unit. That unit becomes <a href="#">life</a> tapped for 5 seconds,
+       	healing any champions who attack it for 15/30/45/60/75 +(0.2 Ability Power Ratio) health over 3 seconds.
+    </p>
+
+
+
+</body>
+</html>
